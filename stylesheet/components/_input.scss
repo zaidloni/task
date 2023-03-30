@@ -1,0 +1,14 @@
+input {
+  border: 0.75px solid #6e8ca6;
+  border-radius: 7px;
+  padding: 10px 80px 10px 10px;
+  // width: 260px;
+
+  &::placeholder {
+    color: #a3a3a3;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    overflow: visible;
+  }
+}

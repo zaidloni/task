@@ -1,0 +1,18 @@
+@import "./font";
+
+*,
+*::after,
+*::before,
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-family: $font-open;
+    box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+}

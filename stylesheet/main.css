@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+*,
+*::after,
+*::before,
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-baseline {
+  align-items: baseline;
+}
+
+.flex-direction {
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.mt-4 {
+  margin-top: 4px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-13 {
+  margin-top: 13px;
+}
+
+.mt-14 {
+  margin-top: 14px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-45 {
+  margin-top: 45px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.ml-8 {
+  margin-left: 8px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-12 {
+  margin-left: 12px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.ml-50 {
+  margin-left: 50px;
+}
+
+.ml-171 {
+  margin-left: 171px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.font-12 {
+  font-size: 12px !important;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.font-14 {
+  font-size: 14px !important;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.font-700 {
+  font-weight: 700;
+}
+
+input {
+  border: 0.75px solid #6e8ca6;
+  border-radius: 7px;
+  padding: 10px 80px 10px 10px;
+}
+input::-moz-placeholder {
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  overflow: visible;
+}
+input::placeholder {
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  overflow: visible;
+}
+
+.cta {
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  background: #ffffff;
+  color: #939393;
+  border: 1.5px solid #939393;
+  padding: 12px 40px;
+}
+
+.cta-grey {
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  background: #cfcfcf;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 11.5px 15px;
+}
+
+.global-container {
+  max-width: 1100px;
+}/*# sourceMappingURL=main.css.map */
