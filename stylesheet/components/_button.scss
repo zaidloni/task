@@ -6,20 +6,26 @@
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.5px;
-  cursor: pointer;
   background: $bg-color;
   color: $color;
+  border: none;
+  
 }
 
 .cta {
   @include btn(#ffffff, #939393);
-  border: 1.5px solid #939393;
+  // border: 1.5px solid #939393;
   padding: 12px 40px;
 }
 
 .cta-grey {
   @include btn(#cfcfcf, white);
-  border: none;
   border-radius: 20px;
   padding: 11.5px 15px;
+}
+
+.cta-active {
+  background-color: #f27b1a !important;
+  color: white;
+  cursor: pointer;
 }

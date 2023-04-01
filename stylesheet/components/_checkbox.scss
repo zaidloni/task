@@ -1,0 +1,27 @@
+input[type="checkbox"] {
+  margin-top: 5px;
+  opacity: 0;
+}
+.check {
+  position: absolute;
+  content: "";
+  color: white;
+  width: 16px;
+  height: 16px;
+  left: 78px;
+  margin-top: 5px;
+  border: 0.75px solid #6e8ca6;
+  border-radius: 5px;
+}
+
+input[type="checkbox"]:checked ~ .check {
+  background-color: rgba(242, 123, 26, 1);
+}
+
+input[type="checkbox"]:checked ~ .check::after {
+  position: absolute;
+  content: url(../../images/checkmark.svg);
+  border-radius: 5px;
+  color: black;
+  padding-left: 1px;
+}

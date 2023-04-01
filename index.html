@@ -1,94 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./stylesheet/main.css" />
-    <title>Task</title>
-  </head>
 
-  <body>
-    <div class="ml-50 global-container">
-      <div class="mt-80 font-12">
-        <p>Date: <span class="font-700">5th November 2020</span></p>
-        <p class="mt-25">To, <br />The Branch Manager<br />ICICI Bank</p>
-        <p class="font-700 mt-15">
-          Re: Inward Remittance into my resident savings account number
-          000201636395
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./stylesheet/main.css" />
+  <title>Task</title>
+</head>
+
+<body>
+  <div class="ml-50 global-container">
+    <div class="mt-80 font-12 lh-20">
+      <p>Date: <span class="font-700">5th November 2020</span></p>
+      <p class="mt-25">To, <br />The Branch Manager<br />ICICI Bank</p>
+      <p class="font-700 mt-15">
+        Re: Inward Remittance into my resident savings account number
+        000201636395
+      </p>
+      <p class="mt-10">Dear Sir/Madam,</p>
+    </div>
+
+    <div>
+      <div class="flex-center mt-40">
+        <p class="font-12 lh-20">
+          This is to confirm that I have received an Inward Wire Remittance of
+          <span class="font-700">50,000.00 USD - US Dollar </span>
+          from
         </p>
-        <p class="mt-10">Dear Sir/Madam,</p>
+        <input type="text" placeholder="Enter Remmiter Name" class="ml-8" />
+      </div>
+      <div class="flex-center mt-10">
+        <p class="font-12 lh-20">
+          favoring my above-mentioned account number for the purpose of “Sale
+          of shares of foreign company
+        </p>
+        <input type="text" placeholder="Enter name of foreign company" class="ml-8" />
       </div>
 
-      <div>
-        <div class="flex-center mt-40">
-          <p class="font-12">
-            This is to confirm that I have received an Inward Wire Remittance of
-            <span class="font-700">50,000.00 USD - US Dollar </span>
-            from
-          </p>
-          <input type="text" placeholder="Enter Remmiter Name" class="ml-8" />
-        </div>
-        <div class="flex-center mt-10">
-          <p class="font-12">
-            favoring my above-mentioned account number for the purpose of “Sale
-            of shares of foreign company
-          </p>
-          <input
-            type="text"
-            placeholder="Enter name of foreign company"
-            class="ml-8"
-          />
-        </div>
-
-        <p class="font-700 font-12 mt-45">
-          I further confirm that the underlying shares/securities were: (Please
-          select on option)
-        </p>
-        <div class="d-flex mt-13">
-          <input type="radio" />
-          <p class="ml-12 font-14">
+      <p class="font-700 font-12 lh-20 mt-45">
+        I further confirm that the underlying shares/securities were: (Please
+        select on option)
+      </p>
+      <div class="d-flex mt-13">
+        <input type="radio" id="rad-1" name="rad" onchange="check()" />
+        <label for="rad-1">
+          <p class="ml-12 font-14 lh-22">
             Purchased by me by through an outward remittance for which details
             are as below:
           </p>
-        </div>
-        <div class="d-flex mt-14 ml-30">
+        </label>
+
+
+
+      </div>
+      <div class="d-flex mt-14 ml-30">
+        <div>
           <div>
-            <div>
-              <p class="font-14">Amount Remitted</p>
-              <input type="text" placeholder="50,000,00" class="mt-4" />
-            </div>
-            <div class="mt-20">
-              <p class="font-14">Name of the Bank from where remitted</p>
-              <input
-                type="text"
-                placeholder="JP MORGAN CHASE, NEWYORK"
-                class="mt-4"
-              />
-            </div>
+            <p class="font-14 lh-22">Amount Remitted</p>
+            <input type="text" placeholder="50,000,00" class="mt-4" id="amt-rem" onkeyup="check()" disabled />
           </div>
-          <div class="ml-171">
-            <div>
-              <p class="font-14">Date of remittance</p>
-              <input type="text" placeholder="2/11/2020" class="mt-4" />
-            </div>
-            <div class="mt-20">
-              <p class="font-14">
-                Name of the Branch of the Bank from where remitted
-              </p>
-              <input
-                type="text"
-                placeholder="CHASU33 / CHIPS URD 0002"
-                class="mt-4"
-              />
-            </div>
+          <div class="mt-20">
+            <p class="font-14 lh-22">Name of the Bank from where remitted</p>
+            <input type="text" placeholder="JP MORGAN CHASE, NEWYORK" class="mt-4" id="name-of-bank" onkeyup="check()"
+              disabled />
+          </div>
+        </div>
+        <div class="ml-171">
+          <div>
+            <p class="font-14 lh-22">Date of remittance</p>
+            <input type="text" placeholder="2/11/2020" class="mt-4" onkeyup="check()" id="date-of-rem" disabled />
+          </div>
+          <div class="mt-20">
+            <p class="font-14 lh-22">
+              Name of the Branch of the Bank from where remitted
+            </p>
+            <input type="text" placeholder="CHASU33 / CHIPS URD 0002" class="mt-4" id="name-0f-branch" onkeyup="check()"
+              disabled />
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="ml-30">
-        <div class="d-flex align-baseline mt-25 font-12">
-          <input type="checkbox" />
+    <div class="ml-30">
+      <div class="d-flex mt-25 font-12 lh-20 align-start">
+        <input type="checkbox"  id="cb-1" onchange="check()" />
+        <span class="check"></span>
+        <label for="cb-1">
           <p class="ml-10">
             Shares/securities were acquired as a portfolio investment under
             Liberalised Remittance Scheme I am an employee or a director of an
@@ -100,9 +98,16 @@
             shares/securities were acquired under “Employees Stock Option” of
             the foreign company.
           </p>
-        </div>
-        <div class="d-flex align-baseline mt-15 font-12">
-          <input type="checkbox" />
+
+
+
+        </label>
+
+      </div>
+      <div class="d-flex  mt-15 font-12 lh-20 align-start">
+        <input type="checkbox" id="cb-2" onchange="check()" />
+        <span class="check"></span>
+        <label for="cb-2">
           <p class="ml-10">
             Shares issued to me are being repurchased by the Foreign company
             provided that (i) the shares were issued in accordance with the
@@ -112,82 +117,105 @@
             Indian Company through the AD Category - I bank giving details of
             remittances / beneficiaries, etc
           </p>
-        </div>
+        </label>
 
-        <div class="d-flex align-baseline mt-15 font-12">
-          <input type="checkbox" />
-          <p class="ml-10">
-            Shares/securities acquired under “Employees Stock Option” of the
-            foreign company when I was not permanently resident in India (i.e.
-            NRI). The amount of remittance from India was within the extant LRS
-            limit.
-          </p>
-        </div>
-        <div class="d-flex align-baseline mt-15 font-12">
-          <input type="checkbox" />
-          <p class="ml-10">
-            Shares/securities acquired under “Employees Stock Option” of the
-            foreign company when I was not permanently resident in India (i.e.
-            NRI). The amount of remittance from India was within the extant LRS
-            limit.
-          </p>
-        </div>
       </div>
 
-      <div class="mt-30">
-        <div class="d-flex">
-          <input type="radio" />
-          <p class="ml-12 font-14">
+      <div class="d-flex  mt-15 font-12 lh-20 align-start">
+        <input type="checkbox" id="cb-3" onchange="check()" />
+        <span class="check"></span>
+        <label for="cb-3">
+          <p class="ml-10">
+            Shares/securities acquired under “Employees Stock Option” of the
+            foreign company when I was not permanently resident in India (i.e.
+            NRI). The amount of remittance from India was within the extant LRS
+            limit.
+          </p>
+        </label>
+
+      </div>
+      <div class="d-flex mt-15 font-12 lh-20 align-start">
+        <input type="checkbox" id="cb-4" onchange="check()" />
+        <span class="check"></span>
+        <label for="cb-4">
+          <p class="ml-10">
+            Shares/securities acquired under “Employees Stock Option” of the
+            foreign company when I was not permanently resident in India (i.e.
+            NRI). The amount of remittance from India was within the extant LRS
+            limit.
+          </p>
+
+        </label>
+
+      </div>
+    </div>
+
+    <div class="mt-30">
+      <div class="d-flex">
+        <input type="radio" id="rad-2" name="rad" onchange="check()" />
+        <label for="rad-2">
+          <p class="ml-12 font-14 lh-22">
             Acquired however no amount has been paid by me as the
             shares/securities were acquired under “Employees Stock Option”
           </p>
-        </div>
-        <div class="d-flex mt-30">
-          <input type="radio" />
-          <p class="ml-12 font-14">
+        </label>
+
+      </div>
+      <div class="d-flex mt-30">
+
+        <input type="radio" id="rad-3" name="rad" onchange="check()" />
+        <label for="rad-3">
+          <p class="ml-12 font-14 lh-22">
             By way of gift from a person resident outside India
           </p>
-        </div>
+        </label>
 
-        <div class="d-flex mt-30">
-          <input type="radio" />
-          <p class="ml-12 font-14">
+      </div>
+
+      <div class="d-flex mt-30">
+        <input type="radio" id="rad-4" name="rad" onchange="check()" />
+        <label for="rad-4">
+          <p class="ml-12 font-14 lh-22">
             By way of inheritance from a person whether resident in or outside
             India
           </p>
-        </div>
+        </label>
 
-        <div class="mt-25 font-12">
-          <p>
-            I further confirm that the proceeds on transfer of shares /
-            securities acquired through the above selected mode have been
-            repatriated immediately on receipt thereof and in any case not later
-            than 90 days from the date of sale of such shares/ securities.
-          </p>
-          <p class="mt-25">Declaration-Cum-Undertaking Under FEMA, 1999</p>
-          <p class="mt-25">
-            I hereby declare that this transaction does not involve, and is not
-            designed for the purpose of any contravention or evasion of the
-            provisions of the aforesaid act or of any rule, regulation,
-            notification, direction or order made there under. I also declare
-            that this transaction is in conformity with the provisions and rules
-            as prescribed by the Reserve Bank of India. I also hereby agree and
-            undertake to give such information / documents as will reasonably
-            satisfy you about this transaction in terms of the above
-            declaration. I also undertake that if I refuse to comply with any
-            such requirement or make only unsatisfactory compliance therewith,
-            the bank shall refuse in writing to undertake the transaction and
-            shall if it has reason to believe that any contravention / evasion
-            is contemplated by me report, the matter to Reserve Bank Of India.
-          </p>
-        </div>
-        <p class="mt-30 font-12">Yours faithfully,</p>
-        <p class="mt-5 font-12">Sharvik Makkar</p>
-        <div class="mt-30 mb-40">
-          <button class="cta-grey">Submit and upload</button>
-          <button class="cta ml-30">Cancel</button>
-        </div>
+      </div>
+
+      <div class="mt-25 font-12 lh-20">
+        <p>
+          I further confirm that the proceeds on transfer of shares /
+          securities acquired through the above selected mode have been
+          repatriated immediately on receipt thereof and in any case not later
+          than 90 days from the date of sale of such shares/ securities.
+        </p>
+        <p class="mt-25">Declaration-Cum-Undertaking Under FEMA, 1999</p>
+        <p class="mt-25">
+          I hereby declare that this transaction does not involve, and is not
+          designed for the purpose of any contravention or evasion of the
+          provisions of the aforesaid act or of any rule, regulation,
+          notification, direction or order made there under. I also declare
+          that this transaction is in conformity with the provisions and rules
+          as prescribed by the Reserve Bank of India. I also hereby agree and
+          undertake to give such information / documents as will reasonably
+          satisfy you about this transaction in terms of the above
+          declaration. I also undertake that if I refuse to comply with any
+          such requirement or make only unsatisfactory compliance therewith,
+          the bank shall refuse in writing to undertake the transaction and
+          shall if it has reason to believe that any contravention / evasion
+          is contemplated by me report, the matter to Reserve Bank Of India.
+        </p>
+      </div>
+      <p class="mt-30 font-12 lh-20">Yours faithfully,</p>
+      <p class="mt-5 font-12 lh-20">Sharvik Makkar</p>
+      <div class="mt-30 mb-40">
+        <button class="cta-grey" id="submit">Submit and upload</button>
+        <button class="cta ml-30" id="cancel">Cancel</button>
       </div>
     </div>
-  </body>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
